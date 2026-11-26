@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENAI - Educação Profissional e Inovação</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <header>
+    <h1>SENAI - Serviço Nacional de Aprendizagem Industrial</h1>
+    <nav>
+      <a href="boas_vindas.html">Início</a>
+      <a href="#" onclick="admin(); return false;" id="navAdminLink">
+        Painel Admin
+      </a>
+      <a href="#" onclick="fazerLogout()">Sair</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2 id="welcomeHeading">Bem-vindo ao SENAI!</h2>
+    <p>O maior complexo privado de educação profissional da América Latina, referência em ensino técnico, superior e
+      inovação para a indústria brasileira.</p>
+  </section>
+
+  <div>
+    <h3>Nossas Áreas de Atuação e Cursos</h3>
+
+    <div>
+
+      <div>
+        <span>Destaque</span>
+        <div>
+          <h4>Aprendizagem Industrial</h4>
+          <p>Cursos gratuitos voltados para jovens que buscam a primeira qualificação profissional e inserção no mercado
+            de trabalho industrial.</p>
+          <div>
+            <span>Modalidade: Presencial e Semipresencial</span>
+          </div>
+          <button type="button" onclick="adicionarAoCarrinho('Aprendizagem Industrial')">Saiba Mais</button>
+        </div>
+      </div>
+
+      <div>
+        <span>Mais Procurado</span>
+        <div>
+          <h4>Cursos Técnicos</h4>
+          <p>Formação de nível médio em áreas como Mecatrônica, Desenvolvimento de Sistemas, Eletrotécnica, Logística e
+            Automação.</p>
+          <div>
+            <span>Duração média: 1,5 a 2 anos</span>
+          </div>
+          <button type="button" onclick="adicionarAoCarrinho('Cursos Técnicos')">Saiba Mais</button>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h4>Graduação e Pós-Graduação</h4>
+          <p>Cursos superiores de tecnologia, engenharias e especializações focadas nas demandas reais da Indústria 4.0.
+          </p>
+          <div>
+            <span>Reconhecido pelo MEC</span>
+          </div>
+          <button type="button" onclick="adicionarAoCarrinho('Graduação e Pós-Graduação')">Saiba Mais</button>
+        </div>
+      </div>
+
+      <div>
+        <span>Inovação</span>
+        <div>
+          <h4>Institutos SENAI de Inovação e Tecnologia</h4>
+          <p>Pesquisa aplicada, desenvolvimento de novos produtos, consultoria e serviços laboratoriais para aumentar a
+            competitividade das empresas.</p>
+          <div>
+            <span>Atendimento Empresarial</span>
+          </div>
+          <button type="button" onclick="adicionarAoCarrinho('Institutos SENAI')">Saiba Mais</button>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h4>Cursos Livres e Aperfeiçoamento</h4>
+          <p>Qualificação rápida para atualização profissional em diversas áreas tecnológicas, gestão e segurança do
+            trabalho.</p>
+          <div>
+            <span>Curta Duração (EAD e Presencial)</span>
+          </div>
+          <button type="button" onclick="adicionarAoCarrinho('Cursos Livres')">Saiba Mais</button>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h4>Mundo SENAI e Olimpíada do Conhecimento</h4>
+          <p>Eventos de portas abertas, feiras de profissões e competições de educação profissional que conectam
+            estudantes e indústrias.</p>
+          <div>
+            <span>Eventos e Visitas</span>
+          </div>
+          <button type="button" onclick="adicionarAoCarrinho('Eventos SENAI')">Saiba Mais</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="java.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const user = JSON.parse(localStorage.getItem('usuarioLogado'));
+      if (user) {
+        document.getElementById('welcomeHeading').textContent = `Bem-vindo ao Senai, ${user.nome}!`;
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "techstore-projeto-frontend-backend",
+  "version": "1.0.0",
+  "description": "Projeto Prático Front-End e Back-End com JSON-Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "json-server": "^0.17.4"
+  }
+}

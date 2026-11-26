@@ -1,0 +1,60 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "sobrenome": "Sistema",
+      "cpf": "000.000.000-00",
+      "email": "admin@email.com",
+      "senha": "123",
+      "rua": "Av. Central, 1000",
+      "cep": "01000-000",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "(11) 99999-9999",
+      "perfil": "admin"
+    },
+    {
+      "id": "2",
+      "nome": "Shibata",
+      "sobrenome": "AAA",
+      "cpf": "123.456.789-00",
+      "email": "Shibata@email.com",
+      "senha": "123",
+      "rua": "Rua tiroteio, 123",
+      "cep": "02000-000",
+      "cidade": "Sabauna",
+      "estado": "SP",
+      "telefone": "(19) 98888-7777",
+      "perfil": "user"
+    },
+    {
+      "nome": "Valerio",
+      "sobrenome": "Miguel",
+      "cpf": "50478268807",
+      "telefone": "11961951956",
+      "email": "Valerio@email.com",
+      "senha": "1234",
+      "cep": "12345678",
+      "rua": "rua doutor roberto nami jafet 159",
+      "cidade": "mogi das cruzes",
+      "estado": "SP",
+      "perfil": "admin",
+      "id": "mCBzfA5"
+    },
+    {
+      "nome": "Matheus",
+      "sobrenome": "Ramalho",
+      "cpf": "14414414414",
+      "telefone": "11949999",
+      "email": "matheus@email.com",
+      "senha": "12345",
+      "cep": "089090",
+      "rua": "Rua 1",
+      "cidade": "Mogi",
+      "estado": "SP",
+      "perfil": "admin",
+      "id": "caYMEQR"
+    }
+  ]
+}
